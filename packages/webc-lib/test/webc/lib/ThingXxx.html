@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ThingXxx - webc.lib</title>
+    <script src="shared-config.js"></script>
+    <script src="../../../../../resources/sap-ui-core.js"
+        id="sap-ui-bootstrap"
+        data-sap-ui-libs="webc.lib"
+        data-sap-ui-resourceroots='{
+					"qunit.internal.acc": "../../../../../test-resources/sap/ui/core/qunit/internal/acc"
+				}'>
+    </script>
+
+    <script>
+        sap.ui.getCore().attachInit(function() {
+            sap.ui.require([
+                "webc/lib/ThingXxx"
+            ], function(
+                ThingXxx
+            ) {
+
+
+                var oThingXxx = new ThingXxx({
+
+                });
+                oThingXxx.placeAt("testControl");
+            });
+        });
+    </script>
+</head>
+
+<body id="body" class="sapUiBody">
+    <div id="methodButtons"></div>
+    <br><br>
+    <div id="testControl"></div>
+</body>
+
+</html>

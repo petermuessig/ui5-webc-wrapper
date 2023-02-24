@@ -1,0 +1,14 @@
+{
+  "name": "webc-reactor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Showcase of building a UI5 Web Components + UI5 Library",
+  "author": "UI5 Community",
+  "license": "Apache2",
+  "scripts": {
+    "start": "yarn workspace webc start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

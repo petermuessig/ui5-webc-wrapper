@@ -1,0 +1,1 @@
+export default {packageName:"webc",fileName:"themes/sap_fiori_3_dark/parameters-bundle.css",content:":root{--my-component-border-color:#00f}"}

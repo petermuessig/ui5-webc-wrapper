@@ -1,0 +1,33 @@
+{
+  "name": "webc",
+  "version": "1.0.0",
+  "ui5": {
+    "webComponentsPackage": true
+  },
+  "scripts": {
+    "clean": "wc-dev clean",
+    "lint": "wc-dev lint",
+    "start": "wc-dev start",
+    "watch": "wc-dev watch",
+    "build": "wc-dev build",
+    "test": "wc-dev test",
+    "create-ui5-element": "wc-create-ui5-element",
+    "prepublishOnly": "npm run build"
+  },
+  "exports": {
+    "./.port": "./.port",
+    "./src/*": "./src/*",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json",
+    "./bundle.js": "./bundle.js",
+    "./*": "./dist/*"
+  },
+  "dependencies": {
+    "@ui5/webcomponents-base": "1.10.4",
+    "@ui5/webcomponents-theming": "1.10.4"
+  },
+  "devDependencies": {
+    "@ui5/webcomponents-tools": "1.10.4",
+    "chromedriver": "*"
+  }
+}

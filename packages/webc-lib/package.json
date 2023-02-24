@@ -1,0 +1,16 @@
+{
+  "name": "webc-lib",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "rimraf src/webc/lib/thirdparty/ && ui5-webc-prebuild",
+    "generate": "ui5-webc-generate",
+    "start": "ui5 serve -o test-resources/webc/lib/kitchen.html"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.0.2",
+    "@ui5/tooling-webc": "^0.1.6",
+    "ui5-middleware-livereload": "^0.8.1",
+    "webc": "1.0.0"
+  }
+}
